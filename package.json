@@ -1,0 +1,16 @@
+{
+  "name": "omnirepo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/client/*",
+      "packages/server"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
