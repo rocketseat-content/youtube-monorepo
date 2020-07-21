@@ -7,6 +7,7 @@
     "start": "tsnd --ignore node_modules --transpile-only --no-notify --respawn src/index.ts"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
