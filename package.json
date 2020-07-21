@@ -6,11 +6,11 @@
   "license": "MIT",
   "workspaces": {
     "packages": [
-      "packages/client/*",
-      "packages/server"
+      "packages/*"
     ]
   },
   "devDependencies": {
+    "@omnirepo/eslint-config": "*",
     "typescript": "^3.9.7"
   }
 }

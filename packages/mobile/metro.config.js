@@ -10,16 +10,7 @@ const path = require('path');
 module.exports = {
   projectRoot: path.resolve(__dirname, '.'),
 
-  watchFolders: [path.resolve(__dirname, '../../../node_modules')],
-
-  // resolver: {
-  //   extraNodeModules: new Proxy(
-  //     {},
-  //     {
-  //       get: (target, name) => path.join(process.cwd(), `node_modules/${name}`),
-  //     },
-  //   ),
-  // },
+  watchFolders: [path.resolve(__dirname, '../../node_modules')],
 
   transformer: {
     getTransformOptions: async () => ({

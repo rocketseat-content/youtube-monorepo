@@ -1,12 +1,16 @@
 {
-  "name": "server",
+  "name": "@omnirepo/server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "tsnd --ignore node_modules --transpile-only --no-notify --respawn src/index.ts"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint": "^7.5.0"
+    "@types/express": "^4.17.7",
+    "ts-node-dev": "^1.0.0-pre.52"
   }
 }
