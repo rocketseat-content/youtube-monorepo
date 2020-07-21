@@ -1,0 +1,20 @@
+name: Build & Deploy (Production)
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'packages/server/**'
+      # - 'packages/another-package/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/server
+
+    steps:
+      - name: Deploy
+        run: echo "Deployed"
